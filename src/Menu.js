@@ -5,8 +5,17 @@ import Simples from './componentes/Simples'
 import ParImpar from './componentes/ParImpar'
 import { Inverter, MegaSena } from './componentes/Multi'
 import Contador from './componentes/Contador'
+import Plataformas from './componentes/Plataformas'
+import ValidarProps from './componentes/ValidarProps'
 
 export default createDrawerNavigator({
+    ValidarProps: {
+        screen: () => <ValidarProps label='Viajar para o tempo: 'ano={20}/>,
+        navigationOptions: { title: 'Validar Props' }
+    },
+    Plataformas: {
+        screen: () => <Plataformas />
+    },
     Contador: {
         screen: () => <Contador numeroInicial={100}/>
     },
